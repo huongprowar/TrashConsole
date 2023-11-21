@@ -1,0 +1,14 @@
+D:\Study\TrashConsole\TrashConsole\bin\Debug\net6.0\TrashConsole.exe
+D:\Study\TrashConsole\TrashConsole\bin\Debug\net6.0\TrashConsole.deps.json
+D:\Study\TrashConsole\TrashConsole\bin\Debug\net6.0\TrashConsole.runtimeconfig.json
+D:\Study\TrashConsole\TrashConsole\bin\Debug\net6.0\TrashConsole.dll
+D:\Study\TrashConsole\TrashConsole\bin\Debug\net6.0\TrashConsole.pdb
+D:\Study\TrashConsole\TrashConsole\obj\Debug\net6.0\TrashConsole.GeneratedMSBuildEditorConfig.editorconfig
+D:\Study\TrashConsole\TrashConsole\obj\Debug\net6.0\TrashConsole.AssemblyInfoInputs.cache
+D:\Study\TrashConsole\TrashConsole\obj\Debug\net6.0\TrashConsole.AssemblyInfo.cs
+D:\Study\TrashConsole\TrashConsole\obj\Debug\net6.0\TrashConsole.csproj.CoreCompileInputs.cache
+D:\Study\TrashConsole\TrashConsole\obj\Debug\net6.0\TrashConsole.dll
+D:\Study\TrashConsole\TrashConsole\obj\Debug\net6.0\refint\TrashConsole.dll
+D:\Study\TrashConsole\TrashConsole\obj\Debug\net6.0\TrashConsole.pdb
+D:\Study\TrashConsole\TrashConsole\obj\Debug\net6.0\TrashConsole.genruntimeconfig.cache
+D:\Study\TrashConsole\TrashConsole\obj\Debug\net6.0\ref\TrashConsole.dll
