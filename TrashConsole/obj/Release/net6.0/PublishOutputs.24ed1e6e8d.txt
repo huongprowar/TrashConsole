@@ -1,0 +1,5 @@
+D:\Study\TrashConsole\TrashConsole\bin\Release\net6.0\publish\RemoveMetaFolder\TrashConsole.exe
+D:\Study\TrashConsole\TrashConsole\bin\Release\net6.0\publish\RemoveMetaFolder\TrashConsole.dll
+D:\Study\TrashConsole\TrashConsole\bin\Release\net6.0\publish\RemoveMetaFolder\TrashConsole.deps.json
+D:\Study\TrashConsole\TrashConsole\bin\Release\net6.0\publish\RemoveMetaFolder\TrashConsole.runtimeconfig.json
+D:\Study\TrashConsole\TrashConsole\bin\Release\net6.0\publish\RemoveMetaFolder\TrashConsole.pdb

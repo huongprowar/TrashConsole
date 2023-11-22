@@ -6,13 +6,14 @@ class Program
 
     static void Main(string[] args)
     {
-        ModifyAllFileName();
+        DeleteMetaFile();
     }
 
     static void ModifyAllFileName()
     {
+        Console.WriteLine("Enter extension: ");
         string key = Console.ReadLine();
-        int currentOrder = 0;
+        int currentOrder = 1;
         string folderPath = rootFolder;
         List<string> folderDirectories = Directory.GetDirectories(folderPath, "*", SearchOption.AllDirectories).ToList();
         foreach (string directory in folderDirectories)
@@ -28,9 +29,10 @@ class Program
                     string newFileName = Path.ChangeExtension(currentOrder.ToString(), key);
 
                     // Đổi tên file
-                    string newFilePath = Path.Combine(folderPath, newFileName);
-                    File.Move(filePath, newFilePath);
+                    string newFilePath = Path.Combine(filePath, newFileName);
+                    File.Move(fullFilePath, newFilePath);
                     Console.WriteLine(newFilePath);
+                    currentOrder++;
                 }
             }
         }
@@ -38,9 +40,9 @@ class Program
 
     static void DeleteMetaFile()
     {
-        string key = Console.ReadLine();
-        string folderPath = rootFolder;
-        List<string> folderDirectories = Directory.GetDirectories(folderPath, "*", SearchOption.AllDirectories).ToList();
+        Console.Write("Input directory path: ");
+        string inputDirectoryPath= Console.ReadLine();
+        List<string> folderDirectories = Directory.GetDirectories(inputDirectoryPath, "*", SearchOption.AllDirectories).ToList();
         foreach (string directory in folderDirectories)
         {
             if (Directory.Exists(directory))
@@ -55,18 +57,21 @@ class Program
                         File.Delete(filePath);
                     }
 
-                }
-            }
+                }                
+            }            
         }
     }
     static void ChangeFileName()
     {
+        Console.WriteLine("Change filename!!!!!");
+        Console.Write("Enter key: ");
         string key = Console.ReadLine();
+        Console.Write("Enter last index: ");
         int lastIndex = Convert.ToInt32(Console.ReadLine());
 
         string folderPath = rootFolder + key;
         string newFileExtension = ".png"; // Phần mở rộng của file mới
-
+        int currentOrder = 1;
         try
         {
             if (Directory.Exists(folderPath))
@@ -78,7 +83,7 @@ class Program
                 {                    
                     string file = Path.GetFileName(filePath);
                     string[] splitFileName = file.Split('.');
-                    int fileIndex = Convert.ToInt32(splitFileName[0]) + lastIndex;
+                    int fileIndex = currentOrder + lastIndex;
 
                     string newFileName = key + fileIndex.ToString();
                     Console.WriteLine(newFileName);
@@ -87,7 +92,7 @@ class Program
                     // Đổi tên file
                     string newFilePath = Path.Combine(folderPath, newFileName);
                     File.Move(filePath, newFilePath);
-
+                    currentOrder++;
                 }
 
                 Console.WriteLine("Đổi tên tất cả các file thành công.");
